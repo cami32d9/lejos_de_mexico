@@ -41,7 +41,7 @@ function dishesByCategory(category) {
     filtered.forEach(dish => {
         let template =
             `<div class="dish_container">
-                    <img src="elements/dishes/${dish.image}.jpg" class="shadow">
+                    <img src="elements/dishes/${dish.image}-thumb.jpg" class="shadow" alt="${dish.title} thumbnail">
                     <div class="dish_info__short">
                     <h3>${dish.title}</h3>
                     <p>${dish.shorttext}</p>

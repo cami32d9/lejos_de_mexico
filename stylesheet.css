@@ -102,7 +102,6 @@ ul {
 }
 
 a {
-    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -148,6 +147,10 @@ nav {
     right: 50px;
     font-size: 1.2rem;
     font-family: "Eras Light ITC", sans-serif;
+}
+
+nav a {
+    display: inline-block;
 }
 
 .nav_item {
@@ -245,8 +248,8 @@ main {
 
 #menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    grid-gap: 20px;
     margin: 40px 0;
 }
 
@@ -255,13 +258,14 @@ button {
     color: var(--light-color-100);
     border: none;
     font-size: 16pt;
-    font-family: "Eras Light ITC", sans-serif;
+    font-family: "Eras Medium ITC", sans-serif;
     margin: 25px 20px 5px 0;
     padding: 0;
     cursor: pointer;
 }
 
 .button_chosen {
+    font-family: "Eras Demi ITC", sans-serif;
     color: #D23D41;
 }
 
@@ -420,4 +424,41 @@ button {
         flex-basis: 160px;
         margin-right: 10px;
     }
+}
+
+/*----- Documentation -----*/
+
+.documentation {
+    background-color: var(--light-color-200);
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.documentation_wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-color-200);
+    font-family: sans-serif;
+}
+
+.documentation_content {
+    flex: 2;
+}
+
+.documentation_images {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 10px;
+    padding-left: 20px;
+}
+
+hr {
+    border-bottom: 1px solid var(--dark-color-100);
+    margin: 40px 0;
+}
+
+.documentation b {
+    font-family: sans-serif;
+
 }

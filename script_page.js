@@ -34,7 +34,7 @@ function start() {
                     </div>
                     
 <div class="large_image">
-                    <img src="elements/dishes/${dish.image}.jpg" class="shadow">
+                    <img src="elements/dishes/${dish.image}.jpg" class="shadow" alt="${dish.title}">
                     </div>
                     </div>
                     <div class="source">
